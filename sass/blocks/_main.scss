@@ -2230,6 +2230,7 @@ input {
 	}
 	.sub-block {
 		width: 100%;
+		padding-bottom: 30px;
 	}
 	.sub-title {
 		font-size: 2rem;
@@ -2247,6 +2248,9 @@ input {
 		width: 90%;
 		height: 40px;
 		font-size: 1.3rem;
+	}
+	.footer {
+		padding-bottom: 30px;
 	}
 }
 
