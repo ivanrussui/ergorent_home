@@ -14,6 +14,8 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script src="script/jquery-3.5.1.min.js"></script>
 
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 
@@ -698,7 +700,8 @@
 
 				</div><!-- /.unit__inner -->
 			</div>
-		</section><!-- /.section units unit__rent -->
+		</section>
+		<!-- /.section units unit__rent -->
 
 		<div class="feedback">
 			<div class="container">
@@ -744,8 +747,8 @@
 					<div class="sub-block">
 						<h2 class="sub-title">Сэкономьте время и деньги</h2>
 						<span class="sub-subtitle">Подпишитесь, и мы вышлем вам лучшие предложения</span>
-						<form action="#" class="sub-form">
-							<input type="text" class="sub-form__input" placeholder="Введите Ваш E-mail">
+						<form action="#" id="sub-form" class="sub-form">
+							<input name="email" type="email" class="sub-form__input" placeholder="Введите Ваш E-mail">
 							<button type="submit" class="sub-form__btn">Подписаться</button>
 						</form>
 					</div><!-- /.sub-block -->
@@ -771,6 +774,7 @@
 	</footer>
 	<!-- /.main -->
 
+	<script src="script/jquery.validate.min.js"></script>
 	<script src="script/slick.min.js"></script>
 	<script src="script/jquery.fancybox.min.js"></script>
 	<script src="script/script.js"></script>

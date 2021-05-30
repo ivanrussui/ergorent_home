@@ -4230,8 +4230,7 @@ input {
 }
 
 .units-title {
-  margin: 0;
-  margin-bottom: 30px;
+  margin: 0 0 30px 10px;
   font-size: 3rem;
   color: var(--secondary);
 }
@@ -4446,7 +4445,7 @@ input {
 }
 
 .unit-big {
-  margin-right: 20px;
+  margin: 0 10px 0;
   height: auto;
   max-height: 434px;
   /* добавлено */
@@ -4463,7 +4462,7 @@ input {
 
 /* ========= */
 .unit-small {
-  margin-right: 20px;
+  margin: 0 10px 0;
   height: auto;
   max-height: 285px;
   /* добавлено */
@@ -4825,6 +4824,7 @@ input {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .sub-form__input,
@@ -4881,6 +4881,16 @@ input {
 .footer-copy {
   font-size: 1.4rem;
   color: var(--primary);
+}
+
+#email-error {
+  color: var(--green);
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 18px;
 }
 
 @media (max-width: 1500px) {
@@ -5423,7 +5433,7 @@ input {
     padding-left: 0px;
   }
   .units-btn__next {
-    right: -20px;
+    right: -15px;
   }
   .dir-header {
     margin-bottom: 30px;
@@ -5661,5 +5671,11 @@ input {
   }
   .footer-copy {
     font-size: 1rem;
+  }
+  #email-error {
+    font-size: 1.4rem;
+    left: 30%;
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
   }
 }
