@@ -4752,7 +4752,7 @@ input {
 .sub {
   position: relative;
   min-height: 497px;
-  background: var(--secondary) url(../img/sub-bg.png) no-repeat;
+  background: url(../img/sub-bg.png) no-repeat;
   background-size: cover;
 }
 
@@ -4842,7 +4842,6 @@ input {
   padding-right: 20px;
   padding-left: 20px;
   max-width: 480px;
-  color: var(--secondary);
 }
 
 .sub-form__btn {
