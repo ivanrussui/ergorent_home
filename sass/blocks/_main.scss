@@ -1361,7 +1361,8 @@ input {
 .sub {
 	position: relative;
 	min-height: 497px;
-	background: var(--secondary) url(../img/sub-bg.png) no-repeat;
+	background: url(../img/sub-bg.png) no-repeat;
+	// background: var(--secondary) url(../img/sub-bg.png) no-repeat;
 	background-size: cover;
 }
 
