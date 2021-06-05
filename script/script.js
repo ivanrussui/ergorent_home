@@ -173,6 +173,27 @@ $(document).ready(function () {
         : '0';
     document.querySelector('#rooms').value = roomsField.value;
   }
+  // ниже дубль функции так было записано в html и я думаю так вернее, но возможно скобки и не влияют на функционал
+  // function guestsFieldsHanlder() {
+  // 	// поле "взрослые"
+  // 	adultsText.textContent = (adultsField.value > 1 || adultsField.value == 0) ? 'взрослых' : 'взрослый';
+  // 	document.querySelector("#adult").value = adultsField.value;
+
+  // 	// поле "дети"
+  // 	childsText.textContent = (childsField.value == 1) ? 'ребёнок' :
+  // 		(childsField.value >= 2 && childsField.value <= 4) ? 'ребёнка' :
+  // 		(childsField.value > 4 || childsField.value == 0) ? "детей" :
+  // 		'0';
+  // 	document.querySelector("#childs").value = childsField.value;
+
+  // 	// поле "комнаты"
+  // 	roomsText.textContent = (roomsField.value == 1) ? 'комната' :
+  // 		(roomsField.value >= 2 && roomsField.value <= 4) ? 'комнаты' :
+  // 		(roomsField.value > 4 || roomsField.value == 0) ? 'комнат' :
+  // 		'0';
+  // 	document.querySelector("#rooms").value = roomsField.value;
+
+  // };
 
   document.querySelectorAll('.guests-modal-part').forEach(function (elem, i) {
     document.querySelectorAll('.guests-field')[i].dataset.giuestsFieldId = i;
@@ -554,6 +575,7 @@ $(document).ready(function () {
     $('.guests_modal').slideUp(400);
   });
 });
+
 $(document).ready(function () {
   // функционал галереи
 
@@ -625,6 +647,7 @@ $(document).ready(function () {
   document
     .querySelector('.object-card-info-photos-more')
     .addEventListener('click', openReservePoput);
+
 
   $('.slider_features').slick({
     infinite: false,
@@ -784,31 +807,34 @@ $(document).ready(function () {
       });
     });
   }
-
-	// валидация почты
-
-
-
-
 });
 
+// валидация почты
 $(document).ready(function () {
   function validateForms(form) {
     $(form).validate({
       rules: {
-				email: {
-					required: true,
-					email: true,
-				},
+        email: {
+          required: true,
+          email: true,
+        },
       },
       messages: {
-				email: {
-					required: 'Пожалуйста, введите свою почту',
-					email: 'Неправильно введена почта',
-				},
+        email: {
+          required: 'Пожалуйста, введите свою почту',
+          email: 'Неправильно введена почта',
+        },
       },
     });
   }
 
   validateForms('#sub-form');
+});
+
+// ниже код был в одном файле  burger.js, похоже ни на что не влиет, выше есть бургер
+const open = document.querySelector('.burger');
+const btn = document.querySelector('.burger__inner');
+
+open.addEventListener('click', function () {
+	btn.classList.toggle('open');
 });
