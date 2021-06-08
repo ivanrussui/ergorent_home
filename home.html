@@ -8,9 +8,10 @@
 	<link rel="stylesheet" href="css/normalize.min.css">
 	<link rel="stylesheet" href="css/slick.min.css">
 	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
-	<link rel="stylesheet" href="css/style.min.css">
+	<!-- <link rel="stylesheet" href="css/style.min.css"> -->
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 
@@ -260,11 +261,12 @@
 
 		</section><!-- /.screen -->
 
-		<!-- в этом слайдере на 1 блок большого слайда больше -->
+		<!-- 1 слайдер -->
 		<section class="section units units__rent">
 			<div class="container">
 				<h2 class="units-title">Объекты для аренды</h2>
 				<div class="units__inner">
+
 					<!-- большой слайдер -->
 					<div class="units-slider-rent__big">
 
@@ -362,7 +364,6 @@
 						</div>
 
 					</div>
-
 					<!-- /.units-slider__rent -->
 
 					<!-- маленький слайдер -->
@@ -490,11 +491,12 @@
 			</div>
 		</section><!-- /.section units unit__rent -->
 
-		<!-- в этом слайдере на 1 блок маленького слайда меньше -->
+		<!-- 2 слайдер -->
 		<section class="section units units__sell">
 			<div class="container">
 				<h2 class="units-title">Объекты для покупки</h2>
 				<div class="units__inner">
+
 					<!-- большой слайдер -->
 					<div class="units-slider-rent__big">
 
@@ -585,38 +587,10 @@
 							</div>
 						</div>
 
-						<div class="unit-big__wrapper noview">
-							<input type="hidden" name="object_id" class="object_id_input" value="{{s_obj.id}}" />
-							<div class="unit unit-big">
-								<div class="unit-close"></div>
-								<a href='#' class="unit-info__title">
-									<img class="unit__bg" src="img/object1.jpeg" alt="Объект 1">
-								</a>
-								<div class="unit-info">
-									<div class="unit-info__inner">
-										<div class="unit-info-left">
-											<a href='#' class="unit-info__title">Новый Горизонт</a>
-											<span class="unit-info__accom">
-												<span>27</span>
-												вариантов размещения
-											</span>
-										</div>
-
-										<div class="unit-info-right unit-info-cost">
-											<span class="unit-info-cost__text">Цена продажи</span>
-											<span class="unit-info-cost__number">
-												<span>1 400 000,00</span>
-												<span>Р</span>
-											</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
 					</div>
 					<!-- /.units-slider__rent -->
 
+					<!-- маленький слайдер -->
 					<div class="units-slider-rent__small">
 
 						<div class="unit-small__wrapper noview">
@@ -677,6 +651,30 @@
 										<div class="unit-info-left">
 											<a href='/holding/booking_object/{{s_obj.id}}/?needs=sell' class="unit-info__title">Paris Land
 												Mark</a>
+										</div>
+
+										<div class="unit-info-right unit-info-cost">
+											<span class="unit-info-cost__text">Цена продажи</span>
+											<span class="unit-info-cost__number">
+												<span>30 500 000,00</span>
+												<span>$</span>
+											</span>
+										</div>
+									</div>
+								</div><!-- /.unit-info -->
+							</div><!-- /.unit-small -->
+						</div>
+
+						<div class="unit-small__wrapper noview">
+							<input type="hidden" name="object_id" class="object_id_input" value="{{s_obj.id}}" />
+							<div class="unit unit-small">
+								<div class="unit-close"></div>
+								<img class="unit__bg" src="img/object4.jpeg" alt="Объект 3" />
+								<div class="unit-info">
+									<div class="unit-info__inner">
+										<div class="unit-info-left">
+											<a href='/holding/booking_object/{{s_obj.id}}/?needs=sell' class="unit-info__title">Отель Стар
+												Хит</a>
 										</div>
 
 										<div class="unit-info-right unit-info-cost">
@@ -768,7 +766,7 @@
 		</div>
 	</footer>
 	<!-- /.main -->
-	
+
 	<script src="script/jquery-3.5.1.min.js"></script>
 	<script src="script/jquery.validate.min.js"></script>
 	<script src="script/slick.min.js"></script>
