@@ -3284,10 +3284,6 @@ input {
   transform: translateX(5px);
 }
 
-.units-slider-rent__big {
-  margin-bottom: 16px;
-}
-
 .unit {
   position: relative;
   -webkit-box-shadow: inset 0px 0px 190px rgba(0, 0, 0, 0.3);
